@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #4C3BCF;
+    --secondary-color:#2F58CD;
+    --brc:rgba(0,0,0,0.2);
+    --ltr:0.4px;
+    --br: 3px;
+    --p-color:#ecebeba6;
+    --white:#fcfcfc;
+    --black:#000;
+    --bg-color:#040404;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: "Onest", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--bg-color);
+    font-weight: 500;
+}
+
+h1{
+    font-size: clamp(2.2rem,7vw,3rem);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+p{
+    font-size: 17px;
+    color: var(--p-color);
+}
+
+input,button{
+    outline: none;
+    border: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* Navbar */
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: var(--bg-color);
+}
+
+/* .menu{
+    display: none;
+} */
+
+.navlinks{
+    display: none;
+}
+
+.menu i{
+    font-size: 25px;
+    color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--primary-color);
+}
+
+.logo a{
+    font-size: 19px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.logo a i{
+    font-size: 22px;
+    color: var(--primary-color);
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.navlinks ul{
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.hover{
+    color: var(--white);
+    font-size: 17px;
+    transition: .4s;
+}
+
+.hover:hover{
+    color: var(--primary-color);
+}
+
+.nav-btn{
+    margin-top: 5px;
+}
+
+.nav-btn a{
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--br);
+}
+
+.navlinks i{
+    color: var(--white);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    display: none;
+}
+
+#home{
+    width: 100%;
+    height: 75%;
+    margin-top: 100px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-left{
+    width: 50%;
+}
+
+.home-left h1{
+    margin-bottom: 20px;
+}
+
+.home-left p{
+    margin-bottom: 20px;
+}
+
+.home-left h4{
+    margin-bottom: 15px;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.home-left h1{
+    color: var(--white);
+}
+
+.home-left h1 span{
+    color: var(--primary-color);
+    background: linear-gradient(45deg,var(--primary-color),var(--white));
+    background-clip: text;
+    color: transparent;
+}
+
+#home-btn{
+    margin-bottom: 20px;
+}
+
+.home-right{
+    width: 40%;
+}
+
+.home-right img{
+    width: 500px;
+}
+
+#home-btn{
+    padding: 12px 50px;
+    font-size: 17px;
+    color: var(--white);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-family: "Onest",sans-serif;
+    border-radius: var(--br);
+    cursor: pointer;
+}
+
+
+.navlinks{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background: var(--bg-color);
+    text-align: center;
+    z-index: 1;
+    padding-top: 150px;
+}
+
+.navlinks ul{
+    display: block;
+}
+
+.navlinks i{
+    display: block;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+.hover{
+    font-size: 22px;
+}
+
+@media only screen and (max-width:1083px){
+    #home{
+        padding: 0 12px;
+    }
+
+    .navbar{
+        padding: 10px 12px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    #home{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        z-index: -1;
+    }
+
+
+    /* .menu{
+        display: block;
+    } */
+
+    .home-left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .home-right img{
+        width: 100%;
+    }
+}
