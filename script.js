@@ -8,7 +8,7 @@ tl.to(".navlinks",{
 })
 
 tl.from(".navlinks ul li",{
-   x: 100,
+   y: 100,
    stagger: 0.3,
    duration: 0.8,
    opacity:0
