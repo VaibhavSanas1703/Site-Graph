@@ -89,6 +89,7 @@ main{
             align-items: center;
     padding: 15px 50px;
     background: var(--bg-color);
+    z-index: 3;
 }
 
 /* .menu{
@@ -353,6 +354,10 @@ li{
 
     #courses{
         height: auto;
+    }
+
+    .logo a i{
+        display: inline;
     }
 
 

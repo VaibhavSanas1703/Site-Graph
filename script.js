@@ -29,3 +29,27 @@ menu.addEventListener("click",() => {
 cross.addEventListener("click",() => {
    tl.reverse()
 })
+
+
+gsap.from(".home-left h4",{
+   y: -100,
+   duration: 1,
+})
+
+gsap.from(".home-left h1",{
+   y: -100,
+   duration: 1,
+})
+gsap.from(".home-left p",{
+   y: -100,
+   duration: 1,
+})
+gsap.from(".home-left a",{
+   y: -100,
+   duration: 1,
+})
+
+gsap.from(".home-right img",{
+   opacity:0,
+   duration: 2,
+})
