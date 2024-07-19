@@ -32,21 +32,21 @@ cross.addEventListener("click",() => {
 
 
 gsap.from(".home-left h4",{
-   y: -100,
-   duration: 1,
+   opacity:0,
+   duration: 3,
 })
 
 gsap.from(".home-left h1",{
-   y: -100,
-   duration: 1,
+   opacity:0,
+   duration: 3,
 })
 gsap.from(".home-left p",{
-   y: -100,
-   duration: 1,
+   opacity:0,
+   duration: 3,
 })
 gsap.from(".home-left a",{
-   y: -100,
-   duration: 1,
+   opacity:0,
+   duration: 3,
 })
 
 gsap.from(".home-right img",{
