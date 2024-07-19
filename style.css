@@ -285,6 +285,7 @@ li{
 
 .coureses-heading h1{
     color: var(--white);
+    margin-bottom: 20px;
 }
 
 .coureses-heading p{
@@ -320,7 +321,59 @@ li{
     border-radius: 15px;
 }
 
+/* Loader Section */
 
+#loader-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-color);
+    height: 100vh;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: opacity .50s , visibility .50s;
+}
+
+#loader-container.toggle-loader{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    animation: loader 0.8s ease-in infinite alternate; 
+}
+
+.main-loader{
+    gap: 6px;
+}
+
+.dot:nth-child(1){
+    animation-delay: 0.2s;
+}
+.dot:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+@keyframes loader {
+    0%{
+        scale: .75;
+    }
+    100%{
+        scale: 1.3;
+    }
+}
 
 
 
